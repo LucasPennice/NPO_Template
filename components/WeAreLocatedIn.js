@@ -1,6 +1,8 @@
 import styles from '../styles/MainPage.module.scss';
-export default () => {
+const WeAreLocatedIn = () => {
 	return (
 		<div className={styles.weAreLocated_container} id="dondeEncontrarnos"></div>
 	);
 };
+
+export default WeAreLocatedIn;
