@@ -1,0 +1,68 @@
+@import '_variables';
+@import '_mixins';
+
+.main_container {
+	min-height: calc(95vh - $menuHeight - $footerHeight);
+	width: 100vw;
+	border-radius: 10px;
+	position: relative;
+}
+
+.aboutUs_container {
+	padding: 2.5rem 0rem;
+	text-align: center;
+	.aboutUs_h1 {
+		@include h1-font-size();
+	}
+
+	.content_container {
+		@include center();
+		.about_image {
+			width: 50%;
+			max-width: 40rem;
+		}
+		.aboutUs_p {
+			@include p-font-size();
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.content_container {
+		@include center();
+		flex-direction: column;
+		.about_image {
+			width: 80% !important;
+		}
+		.aboutUs_p {
+			font-size: 1rem !important;
+		}
+	}
+}
+
+.ourColaborators_container {
+	margin: 5rem 0rem;
+
+	h1 {
+		@include h1-font-size();
+		margin-bottom: 5rem;
+	}
+
+	.colaboratorsList_container {
+		padding: 1rem 5rem;
+		display: flex;
+		gap: 3rem;
+		overflow-x: scroll;
+	}
+}
+
+.weAreLocated_container {
+	background-color: green;
+	min-height: 20rem;
+}
+
+@media (min-width: 750px) {
+	.colaboratorsList_container {
+		justify-content: center;
+	}
+}

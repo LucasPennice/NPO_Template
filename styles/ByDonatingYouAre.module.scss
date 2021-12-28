@@ -1,0 +1,39 @@
+@import '_variables';
+@import '_mixins';
+
+.byDonating_container {
+	background-color: $lightGray;
+	margin: 5rem 0rem;
+	padding: 2rem 0rem;
+	text-align: center;
+
+	h1 {
+		font-size: clamp(1rem, 7vw, 2rem);
+		margin-bottom: 4rem;
+	}
+
+	.chart_container {
+		@include center();
+		justify-content: space-around;
+
+		.chart {
+			i {
+				font-style: normal;
+				font-size: clamp(5rem, 7vw, 7rem);
+				@include onHover-accent();
+			}
+
+			p {
+				font-size: clamp(1rem, 7vw, 1.5rem);
+			}
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.chart_container {
+		@include center();
+		flex-direction: column;
+		gap: 3rem;
+	}
+}

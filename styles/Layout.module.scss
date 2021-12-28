@@ -1,0 +1,9 @@
+@import '_variables';
+@import '_mixins';
+
+.body {
+	@include space-apart-vertical();
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+}

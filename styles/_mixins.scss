@@ -1,0 +1,84 @@
+@mixin center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin space-apart-vertical {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin space-apart-horizontal {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+@mixin menuSpanStyle {
+	display: block;
+	margin: 0.2rem 0rem;
+	width: 20px;
+	height: 4px;
+	background-color: $dark;
+	transition: 0.2s;
+}
+
+@mixin menuClass {
+	position: absolute;
+	top: $menuHeight;
+	right: 0;
+	@include center();
+	flex-direction: column;
+	width: $menuWidth;
+	border-radius: 0 0 0 2px;
+	background-color: transparentize($color: $clear, $amount: 0.3);
+	backdrop-filter: blur(1rem);
+	box-shadow: 0 0px 5px $dark;
+	z-index: 2;
+}
+
+@mixin menuAnchors {
+	display: block;
+	width: 100%;
+	padding: 0.5rem 0rem;
+	transition: 0.15s;
+	font-size: 1.2rem;
+}
+
+@mixin cartClass {
+	position: absolute;
+	top: $menuHeight;
+	right: 0;
+	@include center();
+	flex-direction: column;
+	width: 70%;
+	height: calc(100vh - $menuHeight);
+	border-radius: 5px 0 0 5px;
+	background-color: transparentize($color: $clear, $amount: 0.3);
+	backdrop-filter: blur(1rem);
+	box-shadow: 0 0px 5px $dark;
+}
+
+@mixin extended_menu_onHover {
+	@include center();
+	flex-direction: column;
+}
+
+@mixin h1-font-size {
+	font-size: clamp(1rem, 7vw, 2rem);
+	text-align: center;
+}
+
+@mixin p-font-size {
+	font-size: clamp(1rem, 7vw, 1.5rem);
+}
+
+@mixin onHover-accent {
+	transition: 0.2s;
+	color: lighten($color: $accent, $amount: 10%);
+	&:hover {
+		color: $accent;
+	}
+}

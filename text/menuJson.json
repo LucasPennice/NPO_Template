@@ -1,0 +1,37 @@
+[
+	{
+		"title": "Acerca de Nosotros",
+		"subpages": [
+			{ "title": "Quienes Somos", "anchorLink": "/dondeEstamos12" },
+			{ "title": "Nuestra Misión", "anchorLink": "/dondeEstamos2" },
+			{ "title": "Donde Estamos", "anchorLink": "/#dondeEncontrarnos" }
+		]
+	},
+	{
+		"title": "Contactanos",
+		"subpages": [
+			{ "title": "📱 Tel: +549341", "anchorLink": "/dondeEstamos1" },
+			{ "title": "✉️ Email: fake@gmail.com", "anchorLink": "/dondeEstamos2" },
+			{ "title": "🌎 Dirección:", "anchorLink": "/#dondeEncontrarnos" }
+		]
+	},
+	{
+		"title": "Como Ayudar",
+		"subpages": [
+			{
+				"title": "Donaciones de Ropa",
+				"anchorLink": "/comoAyudar#donacionesDeRopa"
+			},
+			{
+				"title": "Donaciones de alimentos",
+				"anchorLink": "/comoAyudar#donacionesDeAlimentos"
+			},
+			{ "title": "Voluntariado", "anchorLink": "/comoAyudar#voluntariado" }
+		]
+	},
+	{
+		"title": "Donar",
+		"titleLink": "/donar",
+		"isDonationAnchor": true
+	}
+]

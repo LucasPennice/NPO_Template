@@ -1,0 +1,39 @@
+{
+	"imagesArray": [
+		{
+			"blue": [
+				"/svgs/park-blue.svg",
+				"/svgs/easter-blue.svg",
+				"/svgs/christmas-blue.svg"
+			]
+		},
+		{
+			"green": [
+				"/svgs/park-green.svg",
+				"/svgs/easter-green.svg",
+				"/svgs/christmas-green.svg"
+			]
+		},
+		{
+			"purple": [
+				"/svgs/park-purple.svg",
+				"/svgs/easter-purple.svg",
+				"/svgs/christmas-purple.svg"
+			]
+		},
+		{
+			"orange": [
+				"/svgs/park-orange.svg",
+				"/svgs/easter-orange.svg",
+				"/svgs/christmas-orange.svg"
+			]
+		},
+		{
+			"yellow": [
+				"/svgs/park-yellow.svg",
+				"/svgs/easter-yellow.svg",
+				"/svgs/christmas-yellow.svg"
+			]
+		}
+	]
+}

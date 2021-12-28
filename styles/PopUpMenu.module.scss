@@ -1,0 +1,96 @@
+@import '_variables';
+@import '_mixins';
+@import '_animations';
+.container {
+	animation: appearOpacity 0.3s;
+	@include menuClass();
+
+	.extended_menu_container {
+		width: 100%;
+		text-align: center;
+
+		.donate_btn {
+			background-color: $accent;
+			border: 1px solid transparent;
+			color: white;
+
+			&:hover {
+				border: 1px solid $accent;
+				background-color: white;
+				color: $accent;
+			}
+		}
+
+		a,
+		.mainMenu_anchors {
+			@include menuAnchors();
+
+			&:hover {
+				background-color: darken($color: $clear, $amount: 5%);
+			}
+
+			&:hover + .extended_menu {
+				@include extended_menu_onHover;
+			}
+		}
+
+		.extended_menu {
+			@include menuClass();
+			width: 150%;
+			min-height: 100%;
+			top: 0;
+			left: -150%;
+			display: none;
+			background-color: transparentize($color: $clear, $amount: 0.1);
+			animation: appearOpacity 0.45s;
+			&:hover {
+				@include extended_menu_onHover;
+			}
+
+			a {
+				cursor: pointer;
+				&:hover {
+					color: white;
+					background-color: $accent;
+				}
+			}
+		}
+	}
+}
+
+.container_h {
+	transform: scale(0);
+	opacity: 0;
+	transition: opacity 0.3s 0s, transform 0.1s 0.3s;
+	@include menuClass();
+
+	.extended_menu_container {
+		width: 100%;
+		text-align: center;
+		a {
+			@include menuAnchors();
+
+			&:hover {
+				background-color: darken($color: $clear, $amount: 5%);
+			}
+
+			&:hover + .extended_menu {
+				display: block;
+			}
+		}
+
+		.extended_menu {
+			@include menuClass();
+			width: 100%;
+			min-height: 100%;
+			top: 0;
+			left: -100%;
+			display: none;
+			animation: appearOpacity 0.2s;
+
+			&:hover {
+				display: block;
+			}
+		}
+	}
+}
