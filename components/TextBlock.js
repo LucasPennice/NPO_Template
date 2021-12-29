@@ -1,5 +1,5 @@
 import styles from '../styles/MainPage.module.scss';
-export default ({ textJson }) => {
+const TextBlock = ({ textJson }) => {
 	const { title, content, image, isBgGray } = textJson;
 
 	const renderText = (arr) => {
@@ -32,3 +32,4 @@ export default ({ textJson }) => {
 		</div>
 	);
 };
+export default TextBlock;

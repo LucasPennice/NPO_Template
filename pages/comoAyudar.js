@@ -1,4 +1,4 @@
-export default () => {
+const comoAyudar = () => {
 	return (
 		<div>
 			<h1>Soy la pag de como ayudar</h1>
@@ -33,3 +33,4 @@ export default () => {
 		</div>
 	);
 };
+export default comoAyudar;

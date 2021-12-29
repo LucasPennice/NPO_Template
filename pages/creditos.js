@@ -1,4 +1,4 @@
-export default () => {
+const creditos = () => {
 	return (
 		<div>
 			<h2>
@@ -18,3 +18,4 @@ export default () => {
 		</div>
 	);
 };
+export default creditos;

@@ -1,6 +1,6 @@
 import styles from '../../../styles/NavBar.module.scss';
 
-export default ({ isMenuOpen, setIsMenuOpen }) => {
+const OpenMenuButton = ({ isMenuOpen, setIsMenuOpen }) => {
 	return (
 		<button
 			id="openMenu"
@@ -15,3 +15,4 @@ export default ({ isMenuOpen, setIsMenuOpen }) => {
 		</button>
 	);
 };
+export default OpenMenuButton;

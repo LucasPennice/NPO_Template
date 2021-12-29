@@ -2,7 +2,7 @@ import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
 import { useState } from 'react';
 import styles from '../styles/Banner.module.scss';
 
-export default ({ imagesArray }) => {
+const ImageSlider = ({ imagesArray }) => {
 	const [currentImg, setCurrentImg] = useState(0);
 
 	const prevImg = () => {
@@ -55,3 +55,4 @@ export default ({ imagesArray }) => {
 		</div>
 	);
 };
+export default ImageSlider;

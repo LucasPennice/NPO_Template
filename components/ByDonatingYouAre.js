@@ -1,6 +1,6 @@
 import styles from '../styles/ByDonatingYouAre.module.scss';
 import { sectionText } from '../text/byDonatingYouAre';
-export default () => {
+const ByDonatingYouAre = () => {
 	const { title, content } = sectionText;
 
 	const renderText = (arr) => {
@@ -22,3 +22,5 @@ export default () => {
 		</div>
 	);
 };
+
+export default ByDonatingYouAre;

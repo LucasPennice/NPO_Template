@@ -1,7 +1,7 @@
 import styles from '../../styles/Footer.module.scss';
 import menuJson from '../../text/menuJson.json';
 import Link from 'next/link';
-export default () => {
+const Footer = () => {
 	const renderFooterLinks = (arr) => {
 		return arr.map((obj) => {
 			const { title, anchorLink } = obj;
@@ -33,3 +33,5 @@ export default () => {
 		</>
 	);
 };
+
+export default Footer;

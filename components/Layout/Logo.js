@@ -1,10 +1,12 @@
 import companyName from '../../text/companyName.json';
 import Link from 'next/link';
 
-export default () => {
+const Logo = () => {
 	return (
 		<Link href="/">
 			<p className="logo">{companyName.companyName}</p>
 		</Link>
 	);
 };
+
+export default Logo;

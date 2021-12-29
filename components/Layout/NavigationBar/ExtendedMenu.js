@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../../styles/PopUpMenu.module.scss';
 
-export default ({ menuData }) => {
+const ExtendedMenu = ({ menuData }) => {
 	const { title, subpages, titleLink, isDonationAnchor } = menuData;
 
 	const renderLinks = (subpages) => {
@@ -41,3 +41,5 @@ export default ({ menuData }) => {
 		</div>
 	);
 };
+
+export default ExtendedMenu;

@@ -1,6 +1,6 @@
 import styles from '../styles/MainPage.module.scss';
 
-export default () => {
+const OurColaborators = () => {
 	return (
 		<div className={styles.ourColaborators_container}>
 			<h1>Nuestros colaboradores son:</h1>
@@ -13,3 +13,4 @@ export default () => {
 		</div>
 	);
 };
+export default OurColaborators;

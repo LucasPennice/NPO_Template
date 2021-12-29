@@ -1,7 +1,7 @@
 import styles from '../../styles/Layout.module.scss';
 import NavBar from './NavigationBar/NavBar';
 import Footer from './Footer';
-export default ({ children, isMenuOpen, setIsMenuOpen }) => {
+const Layout = ({ children, isMenuOpen, setIsMenuOpen }) => {
 	const closeMenu = (e) => {
 		if (e.target.id !== 'menuBtn' && e.target.id !== 'btnSpan')
 			setIsMenuOpen(false);
@@ -15,3 +15,5 @@ export default ({ children, isMenuOpen, setIsMenuOpen }) => {
 		</div>
 	);
 };
+
+export default Layout;

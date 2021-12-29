@@ -1,7 +1,7 @@
 import styles from '../../../styles/PopUpMenu.module.scss';
 import menuJson from '../../../text/menuJson.json';
 import ExtendedMenu from './ExtendedMenu';
-export default ({ isMenuOpen }) => {
+const PopUpMenu = ({ isMenuOpen }) => {
 	const displayMenu = (state) => {
 		return state === false ? styles.container_h : styles.container;
 	};
@@ -19,3 +19,5 @@ export default ({ isMenuOpen }) => {
 		</>
 	);
 };
+
+export default PopUpMenu;
