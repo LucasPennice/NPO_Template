@@ -25,7 +25,6 @@ export default function Home() {
 			<div className={styles.main_container}>
 				<TextBlock textJson={aboutUsText} />
 				<Banner imagesArray={blue} />
-
 				<TextBlock textJson={ourMissionText} />
 				<ByDonatingYouAre />
 				<OurColaborators />

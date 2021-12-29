@@ -1,0 +1,51 @@
+@import '_mixins';
+@import '_variables';
+
+.weAreLocated_container {
+	padding: 2rem 0rem;
+
+	.weAreLocated_title {
+		@include h1-font-size();
+		padding-bottom: 2rem;
+	}
+	.mapAndText_container {
+		width: 100vw;
+		@include center();
+		padding: 0rem 1rem;
+
+		.map_container {
+			width: 50%;
+			height: 30rem;
+			box-shadow: 0 0 5px $dark;
+			a,
+			button {
+				display: none;
+			}
+		}
+
+		.text_container {
+			width: 50%;
+			text-align: center;
+
+			h2 {
+				font-weight: 500;
+			}
+			span {
+				padding-left: 1rem;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.weAreLocated_container {
+		flex-direction: column;
+		gap: 2rem;
+
+		.map_container {
+			width: 90%;
+			height: 20rem;
+		}
+	}
+}
