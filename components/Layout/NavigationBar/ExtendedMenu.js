@@ -8,7 +8,7 @@ const ExtendedMenu = ({ menuData }) => {
 		return subpages.map((anchor) => {
 			return (
 				<Link href={anchor.anchorLink} key={anchor.anchorLink}>
-					{anchor.title}
+					{`${anchor.title}${anchor.content}`}
 				</Link>
 			);
 		});

@@ -2,17 +2,41 @@
 	{
 		"title": "Acerca de Nosotros",
 		"subpages": [
-			{ "title": "Quienes Somos", "anchorLink": "/dondeEstamos12" },
-			{ "title": "Nuestra Misión", "anchorLink": "/dondeEstamos2" },
-			{ "title": "Donde Estamos", "anchorLink": "/#dondeEncontrarnos" }
+			{
+				"title": "Quienes Somos",
+				"content": "",
+				"anchorLink": "/dondeEstamos12"
+			},
+			{
+				"title": "Nuestra Misión",
+				"content": "",
+				"anchorLink": "/dondeEstamos2"
+			},
+			{
+				"title": "Donde Estamos",
+				"content": "",
+				"anchorLink": "/#dondeEncontrarnos"
+			}
 		]
 	},
 	{
 		"title": "Contactanos",
 		"subpages": [
-			{ "title": "📱 Tel: +549341", "anchorLink": "/dondeEstamos1" },
-			{ "title": "✉️ Email: fake@gmail.com", "anchorLink": "/dondeEstamos2" },
-			{ "title": "🌎 Dirección:", "anchorLink": "/#dondeEncontrarnos" }
+			{
+				"title": "📱 Tel: ",
+				"content": "+549341",
+				"anchorLink": "/dondeEstamos1"
+			},
+			{
+				"title": "✉️ Email: ",
+				"content": "fake@gmail.com",
+				"anchorLink": "/dondeEstamos2"
+			},
+			{
+				"title": "🌎 Dirección:",
+				"content": " La direccion",
+				"anchorLink": "/#dondeEncontrarnos"
+			}
 		]
 	},
 	{
@@ -20,13 +44,19 @@
 		"subpages": [
 			{
 				"title": "Donaciones de Ropa",
+				"content": "",
 				"anchorLink": "/comoAyudar#donacionesDeRopa"
 			},
 			{
 				"title": "Donaciones de alimentos",
+				"content": "",
 				"anchorLink": "/comoAyudar#donacionesDeAlimentos"
 			},
-			{ "title": "Voluntariado", "anchorLink": "/comoAyudar#voluntariado" }
+			{
+				"title": "Voluntariado",
+				"content": "",
+				"anchorLink": "/comoAyudar#voluntariado"
+			}
 		]
 	},
 	{

@@ -1,10 +1,12 @@
 import styles from '../styles/WhereToFindUs.module.scss';
 import React, { useRef, useEffect, useState } from 'react';
 import companyLocation from '../text/companyLocation.json';
+import menuJson from '../text/menuJson.json';
 import mapboxgl from '!mapbox-gl';
 mapboxgl.accessToken =
 	'pk.eyJ1IjoibHVjYXNwZW5uaWNlIiwiYSI6ImNreHJvbjU1NDRwY2MybnB6OTYwczFsdnEifQ.AI081v4O_daf6vZS8utibA';
 const WeAreLocatedIn = () => {
+	const { title, content } = menuJson;
 	const { latitude, longitude, zoomLevel, mapsLink } = companyLocation;
 	const mapContainer = useRef(null);
 	const map = useRef(null);
@@ -21,6 +23,23 @@ const WeAreLocatedIn = () => {
 			zoom: zoom,
 		});
 	});
+
+	const renderInformation = (arr) => {
+		return arr.map((obj) => {
+			const { title, subpages } = obj;
+			if (title === 'Contactanos') {
+				return subpages.map((o) => {
+					return (
+						<h2>
+							{o.title}
+							<span>{o.content}</span>
+						</h2>
+					);
+				});
+			}
+		});
+	};
+
 	return (
 		<div
 			className={`${styles.weAreLocated_container} lightGrayBg`}
@@ -30,20 +49,12 @@ const WeAreLocatedIn = () => {
 			<div className={styles.mapAndText_container}>
 				<div ref={mapContainer} className={styles.map_container} />
 				<div className={styles.text_container}>
+					{renderInformation(menuJson)}
 					<h2>
-						Dirección: <span>FakeDir</span>
-					</h2>
-					<h2>
-						Teléfono: <span>FakeDir</span>
-					</h2>
-					<h2>
-						Email: <span>FakeDir</span>
-					</h2>
-					<h2>
-						Como Llegar:
+						🗺️ Como Llegar:
 						<span>
 							<a target="_blank" href={mapsLink}>
-								asdasd
+								Clickeame!
 							</a>
 						</span>
 					</h2>

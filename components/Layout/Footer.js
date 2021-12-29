@@ -4,10 +4,10 @@ import Link from 'next/link';
 const Footer = () => {
 	const renderFooterLinks = (arr) => {
 		return arr.map((obj) => {
-			const { title, anchorLink } = obj;
+			const { title, anchorLink, content } = obj;
 			return (
 				<a href={anchorLink} key={anchorLink} className={styles.footer_a}>
-					{title}
+					{`${title} ${content}`}
 				</a>
 			);
 		});
