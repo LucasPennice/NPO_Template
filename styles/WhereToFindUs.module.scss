@@ -39,13 +39,15 @@
 }
 
 @media (max-width: 750px) {
-	.weAreLocated_container {
+	.mapAndText_container {
 		flex-direction: column;
-		gap: 2rem;
+		.map_container,
+		.text_container {
+			width: 100% !important;
+		}
 
 		.map_container {
-			width: 90%;
-			height: 20rem;
+			height: 60vh !important;
 		}
 	}
 }

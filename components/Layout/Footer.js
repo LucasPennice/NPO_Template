@@ -15,7 +15,7 @@ const Footer = () => {
 	const renderFooter = (arr) => {
 		return arr.map((obj) => {
 			const { title, subpages, isDonationAnchor } = obj;
-			if (isDonationAnchor === true) return <></>;
+			if (isDonationAnchor === true) return <div key={title}></div>;
 			return (
 				<div key={title} className={styles.footerSection_container}>
 					<h1 className={styles.footer_h1}>{title}</h1>
@@ -27,7 +27,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer className={styles.footer}>{renderFooter(menuJson)}</footer>
-			<Link href="creditos">
+			<Link href="/creditos">
 				<a className={styles.creditos_anchor}>Créditos y agradecimientos</a>
 			</Link>
 		</>

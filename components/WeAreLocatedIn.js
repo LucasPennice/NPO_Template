@@ -30,7 +30,7 @@ const WeAreLocatedIn = () => {
 			if (title === 'Contactanos') {
 				return subpages.map((o) => {
 					return (
-						<h2>
+						<h2 key={o.title}>
 							{o.title}
 							<span>{o.content}</span>
 						</h2>
@@ -53,7 +53,7 @@ const WeAreLocatedIn = () => {
 					<h2>
 						🗺️ Como Llegar:
 						<span>
-							<a target="_blank" href={mapsLink}>
+							<a target="_blank" href={mapsLink} rel="noreferrer">
 								Clickeame!
 							</a>
 						</span>

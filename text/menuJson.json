@@ -5,17 +5,12 @@
 			{
 				"title": "Quienes Somos",
 				"content": "",
-				"anchorLink": "/dondeEstamos12"
+				"anchorLink": "#quienesSomos"
 			},
 			{
 				"title": "Nuestra Misión",
 				"content": "",
-				"anchorLink": "/dondeEstamos2"
-			},
-			{
-				"title": "Donde Estamos",
-				"content": "",
-				"anchorLink": "/#dondeEncontrarnos"
+				"anchorLink": "#nuestraMision"
 			}
 		]
 	},
@@ -25,17 +20,17 @@
 			{
 				"title": "📱 Tel: ",
 				"content": "+549341",
-				"anchorLink": "/dondeEstamos1"
+				"anchorLink": "https://wa.me/"
 			},
 			{
 				"title": "✉️ Email: ",
 				"content": "fake@gmail.com",
-				"anchorLink": "/dondeEstamos2"
+				"anchorLink": "mailto: abc@example.com"
 			},
 			{
 				"title": "🌎 Dirección:",
 				"content": " La direccion",
-				"anchorLink": "/#dondeEncontrarnos"
+				"anchorLink": "#dondeEncontrarnos"
 			}
 		]
 	},
