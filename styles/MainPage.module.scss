@@ -11,6 +11,7 @@
 .aboutUs_container {
 	padding: 2.5rem 0rem;
 	text-align: center;
+
 	.aboutUs_h1 {
 		@include h1-font-size();
 	}
