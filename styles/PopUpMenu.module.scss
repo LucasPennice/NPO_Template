@@ -4,6 +4,7 @@
 .container {
 	animation: appearOpacity 0.3s;
 	@include menuClass();
+	z-index: 5;
 
 	.extended_menu_container {
 		width: 100%;
