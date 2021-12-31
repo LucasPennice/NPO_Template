@@ -29,12 +29,23 @@ const WeAreLocatedIn = () => {
 			const { title, subpages } = obj;
 			if (title === 'Contactanos') {
 				return subpages.map((o) => {
-					return (
-						<h2 key={o.title}>
-							{o.title}
-							<span>{o.content}</span>
-						</h2>
-					);
+					if (o.title !== '🌎 Dirección:') {
+						return (
+							<h2 key={o.title}>
+								{o.title}
+								<span>
+									<a
+										href={o.anchorLink}
+										className={styles.whereToFindUs_link}
+										target="_blank"
+										rel="noreferrer"
+									>
+										{o.content}
+									</a>
+								</span>
+							</h2>
+						);
+					}
 				});
 			}
 		});
@@ -53,7 +64,12 @@ const WeAreLocatedIn = () => {
 					<h2>
 						🗺️ Como Llegar:
 						<span>
-							<a target="_blank" href={mapsLink} rel="noreferrer">
+							<a
+								target="_blank"
+								href={mapsLink}
+								className={styles.whereToFindUs_link}
+								rel="noreferrer"
+							>
 								Clickeame!
 							</a>
 						</span>

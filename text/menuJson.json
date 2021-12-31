@@ -5,12 +5,12 @@
 			{
 				"title": "Quienes Somos",
 				"content": "",
-				"anchorLink": "#quienesSomos"
+				"anchorLink": "/#quienesSomos"
 			},
 			{
 				"title": "Nuestra Misión",
 				"content": "",
-				"anchorLink": "#nuestraMision"
+				"anchorLink": "/#nuestraMision"
 			}
 		]
 	},
@@ -30,7 +30,7 @@
 			{
 				"title": "🌎 Dirección:",
 				"content": " La direccion",
-				"anchorLink": "#dondeEncontrarnos"
+				"anchorLink": "/#dondeEncontrarnos"
 			}
 		]
 	},
@@ -56,7 +56,7 @@
 	},
 	{
 		"title": "Donar",
-		"titleLink": "/donar",
+		"titleLink": "",
 		"isDonationAnchor": true
 	}
 ]

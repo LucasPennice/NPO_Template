@@ -38,6 +38,21 @@
 	}
 }
 
+.whereToFindUs_link {
+	cursor: pointer;
+	background-color: $clear;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.5rem;
+	border: 1px solid $accent;
+	color: $accent;
+	transition: 0.15s;
+
+	&:hover {
+		background-color: $accent;
+		color: $clear;
+	}
+}
+
 @media (max-width: 750px) {
 	.mapAndText_container {
 		flex-direction: column;

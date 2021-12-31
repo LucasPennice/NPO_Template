@@ -1,36 +1,16 @@
+import comoAyudarJson from '../text/comoAyudar.json';
+
 const comoAyudar = () => {
-	return (
-		<div>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1>Soy la pag de como ayudar</h1>
-			<h1 id="donacionesDeRopa">jaja xd</h1>
-		</div>
-	);
+	const renderComoAyudar = (arr) => {
+		return arr.map((textObj) => {
+			return (
+				<>
+					<h1 id={textObj.id}>{textObj.title}</h1>
+					<p>{textObj.content}</p>
+				</>
+			);
+		});
+	};
+	return <div className="comoAyudar">{renderComoAyudar(comoAyudarJson)}</div>;
 };
 export default comoAyudar;

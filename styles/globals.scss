@@ -56,3 +56,9 @@ a {
 .lightGrayBg {
 	background-color: $lightGray;
 }
+
+.comoAyudar {
+	min-height: calc(85vh - $menuHeight - $footerHeight);
+	@include center();
+	flex-direction: column;
+}
