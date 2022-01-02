@@ -10,7 +10,7 @@ const creditos = () => {
 					<a
 						href="https://www.lucaspennice.ar/"
 						target="_blank"
-						rel="noreferral"
+						rel="noreferrer"
 					>
 						lucaspennice.ar
 					</a>
@@ -20,7 +20,7 @@ const creditos = () => {
 					<a
 						href="mailto:lucaspennice@gmail.com"
 						target="_blank"
-						rel="noreferral"
+						rel="noreferrer"
 					>
 						lucaspennice@gmail.com
 					</a>
@@ -30,7 +30,7 @@ const creditos = () => {
 					<a
 						href="https://wa.me/+5493413584946"
 						target="_blank"
-						rel="noreferral"
+						rel="noreferrer"
 					>
 						+5493413584946
 					</a>
@@ -40,7 +40,7 @@ const creditos = () => {
 					<a
 						href="https://github.com/LucasPennice"
 						target="_blank"
-						rel="noreferral"
+						rel="noreferrer"
 					>
 						github.com/LucasPennice
 					</a>
@@ -48,14 +48,14 @@ const creditos = () => {
 				<h1>
 					Ilustraciones cortesía de:{' '}
 					<span>
-						<a href="https://storyset.com/" target="_blank" rel="noreferral">
+						<a href="https://storyset.com/" target="_blank" rel="noreferrer">
 							StorySet.com
 						</a>{' '}
 						y{' '}
 						<a
 							href="https://www.freepikcompany.com/"
 							target="_blank"
-							rel="noreferral"
+							rel="noreferrer"
 						>
 							FreePikCompany
 						</a>
