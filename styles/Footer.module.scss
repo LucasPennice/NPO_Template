@@ -6,10 +6,11 @@
 	min-height: $footerHeight;
 	padding: 2rem 1rem;
 	@include space-apart-horizontal();
+	justify-content: space-evenly;
 	align-items: flex-start;
 	color: transparentize($color: $clear, $amount: 0.5);
 	background-color: $dark;
-
+	animation: appearOpacity 0.2s forwards;
 	.footerSection_container {
 		display: flex;
 		flex-direction: column;
@@ -35,7 +36,8 @@
 .creditos_anchor {
 	width: 100%;
 	background-color: $dark;
-	text-align: center;
+	text-align: left;
+	padding-left: 1rem;
 	color: transparentize($color: $clear, $amount: 0.5);
 	cursor: pointer;
 	transition: 0.15s;

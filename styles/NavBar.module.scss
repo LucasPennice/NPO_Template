@@ -8,7 +8,8 @@
 	@include space-apart-horizontal();
 	box-shadow: 0 0 5px $dark;
 	color: $dark;
-	background-color: $clear;
+	background-color: $dark;
+	animation: appearOpacity 0.2s forwards;
 }
 
 .navBarIcons {
@@ -34,17 +35,19 @@
 .openMenuBtn:active,
 .closeMenuBtn:active {
 	border: none;
+	background-color: $dark;
 }
 .openMenuBtn:hover,
 .closeMenuBtn:hover {
 	cursor: pointer;
 	span {
+		cursor: pointer;
 		background-color: $accent;
 	}
 }
 
 .openMenuBtn {
-	background-color: $clear;
+	background-color: $dark;
 	span {
 		@include menuSpanStyle();
 	}

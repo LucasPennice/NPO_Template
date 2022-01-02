@@ -48,8 +48,9 @@ a {
 .logo {
 	cursor: pointer;
 	font-size: 1.5rem;
-	color: $accent;
-	font-weight: bold;
+	color: white;
+	font-weight: 500;
+	opacity: 0.9;
 	padding: 0.2rem 0.5rem;
 }
 
@@ -61,4 +62,54 @@ a {
 	min-height: calc(85vh - $menuHeight - $footerHeight);
 	@include center();
 	flex-direction: column;
+}
+
+.creditos_container {
+	@include center();
+	flex-direction: column;
+	width: 100vw;
+	height: 80vh;
+
+	h1 {
+		opacity: 0.8;
+		font-size: 1.5rem;
+		span {
+			opacity: 1;
+			font-size: 2rem;
+			a {
+				opacity: 1;
+				font-size: 1.8rem;
+				padding: 0rem 1rem;
+				border-radius: 10px;
+				border: 1px solid transparent;
+				cursor: pointer;
+				transition: 0.15s;
+
+				&:hover {
+					border: 1px solid black;
+					background-color: black;
+					color: white;
+				}
+			}
+		}
+	}
+	h2 {
+		opacity: 0.8;
+		font-size: 1.2rem;
+		a {
+			opacity: 1;
+			font-size: 1.8rem;
+			padding: 0rem 1rem;
+			border-radius: 10px;
+			border: 1px solid transparent;
+			cursor: pointer;
+			transition: 0.15s;
+
+			&:hover {
+				border: 1px solid black;
+				background-color: black;
+				color: white;
+			}
+		}
+	}
 }

@@ -3,6 +3,8 @@
 
 .weAreLocated_container {
 	padding: 2rem 0rem;
+	opacity: 0;
+	animation: appearOpacity 0.2s forwards 0.3s;
 
 	.weAreLocated_title {
 		@include h1-font-size();

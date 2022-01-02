@@ -6,6 +6,8 @@
 	margin: 5rem 0rem;
 	padding: 2rem 0rem;
 	text-align: center;
+	opacity: 0;
+	animation: appearOpacity 0.2s forwards 0.2s;
 
 	h1 {
 		@include h1-font-size();

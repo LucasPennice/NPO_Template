@@ -6,6 +6,8 @@
 	width: 100vw;
 	border-radius: 10px;
 	position: relative;
+	opacity: 0;
+	animation: appearOpacity 0.2s forwards 0.1s;
 }
 
 .aboutUs_container {
